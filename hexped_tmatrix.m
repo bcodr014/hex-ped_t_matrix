@@ -1,12 +1,12 @@
 axis = 2;
 syms theta_l1 theta_l2 theta_r1 theta_r2;
-syms a_l1 a_l2 a_r1 a_r2;
+syms a1 a2;
 
 T_l = cell(axis,1);
 theta_l = [theta_l1 theta_l2];
 alpha_l = [pi/2 0];
 d_l = [0 0];
-a_l = [a_l1 a_l2];
+a_l = [a1 a2];
 n_l = [theta_l; alpha_l; d_l; a_l];
 
 n_l = transpose(n_l);
@@ -15,7 +15,7 @@ T_r = cell(axis,1);
 theta_r = [theta_r1 theta_r2];
 alpha_r = [-pi/2 0];
 d_r = [0 0];
-a_r = [a_r1 a_r2];
+a_r = [a1 a2];
 n_r = [theta_r; alpha_r; d_r; a_r];
 
 n_r = transpose(n_r);
